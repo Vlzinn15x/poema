@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Condiment&family=Fleur+De+Leah&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font1: 'Playfair Display', serif;
+    --font2: 'Fleur De Leah', cursive;
+    --font3: 'Condiment', cursive;
+    --cor1: #ffffff;
+    --cor2: #000000;
+}
+
+html,
+body {
+    min-height: 100vh;
+    background-color: var(--cor1);
+    font-family: var(--font1);
+
+}
+
+header {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    text-align: center;
+}
+
+header>h1 {
+    padding-top: 50px;
+    font-family: var(--font1);
+    font-variant: small-caps;
+}
+
+.normal {
+    color: var(--cor2);
+
+}
+
+.imagem {
+    background-color: var(--cor2);
+    box-shadow: 6px 6px 13px 1px solid rgb(0, 0, 0);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.imagem>p {
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+#imagem1 {
+    background-image: url('./OIP\ \(1\).webp');
+}
+
+#imagem2 {
+    background-image: url(./0991-iron-bundle.webp);
+    background-position: right;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 2em;
+    line-height: 2em;
+    font-family: var(--font3);
+    font-size: 2vw;
+}
+
+footer {
+    background-color: var(--cor2);
+    color: var(--cor1);
+    text-align: center;
+    padding: 20px;
+}
